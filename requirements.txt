@@ -1,0 +1,9 @@
+fastapi==0.63.0
+pymongo==4.1.1
+uvicorn==0.13.3
+dnspython==2.3.0
+PyJWT==2.6.0
+passlib==1.7.1
+slowapi==0.1.8
+pytest==7.4.4
+requests==2.31.0

@@ -1,0 +1,66 @@
+2024-08-29 21:07:09,716 [INFO] - Started server process [22656]
+2024-08-29 21:07:09,717 [INFO] - Waiting for application startup.
+2024-08-29 21:07:09,718 [INFO] - Application startup complete.
+2024-08-29 21:07:20,534 [INFO] - Shutting down
+2024-08-29 21:07:20,642 [INFO] - Waiting for application shutdown.
+2024-08-29 21:07:20,644 [INFO] - Application shutdown complete.
+2024-08-29 21:07:20,644 [INFO] - Finished server process [22656]
+2024-08-29 21:07:24,139 [INFO] - Started server process [19604]
+2024-08-29 21:07:24,140 [INFO] - Waiting for application startup.
+2024-08-29 21:07:24,141 [INFO] - Application startup complete.
+2024-08-29 21:07:26,528 [ERROR] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\middleware\base.py", line 26, in __call__
+    await response(scope, receive, send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\responses.py", line 228, in __call__
+    await run_until_first_complete(
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\concurrency.py", line 16, in run_until_first_complete
+    (done, pending) = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sara\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 451, in wait
+    raise TypeError("Passing coroutines is forbidden, use tasks explicitly.")
+TypeError: Passing coroutines is forbidden, use tasks explicitly.
+2024-08-29 21:07:26,921 [ERROR] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\middleware\base.py", line 26, in __call__
+    await response(scope, receive, send)
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\responses.py", line 228, in __call__
+    await run_until_first_complete(
+  File "C:\Users\Sara\OneDrive\Desktop\FastApiClass\venv\Lib\site-packages\starlette\concurrency.py", line 16, in run_until_first_complete
+    (done, pending) = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sara\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 451, in wait
+    raise TypeError("Passing coroutines is forbidden, use tasks explicitly.")
+TypeError: Passing coroutines is forbidden, use tasks explicitly.
+2024-08-29 21:11:20,535 [INFO] - Shutting down
+2024-08-29 21:11:20,643 [INFO] - Waiting for application shutdown.
+2024-08-29 21:11:20,644 [INFO] - Application shutdown complete.
+2024-08-29 21:11:20,645 [INFO] - Finished server process [19604]
